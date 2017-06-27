@@ -1,0 +1,51 @@
+﻿  WinString.cpp
+  PolymorphicType1.cpp
+s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(20): warning C4311: 'type cast': pointer truncation from 'INT *' to 'UINT'
+s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(20): warning C4302: 'type cast': truncation from 'INT *' to 'UINT'
+s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(21): warning C4311: 'type cast': pointer truncation from 'INT *' to 'UINT'
+s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(21): warning C4302: 'type cast': truncation from 'INT *' to 'UINT'
+s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(28): warning C4477: 'wprintf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'UINT_PTR'
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(28): note: consider using '%llu' in the format string
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(28): note: consider using '%Iu' in the format string
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(28): note: consider using '%I64u' in the format string
+s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(28): warning C4477: 'wprintf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 2 has type 'UINT_PTR'
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(28): note: consider using '%llu' in the format string
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(28): note: consider using '%Iu' in the format string
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(28): note: consider using '%I64u' in the format string
+s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(29): warning C4477: 'wprintf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'UINT_PTR'
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(29): note: consider using '%llu' in the format string
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(29): note: consider using '%Iu' in the format string
+  s:\kpu\4-summer\system\practice\practice\polymorphictype1.cpp(29): note: consider using '%I64u' in the format string
+  MBCS_WBCS2.cpp
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(21): warning C4002: too many actual parameters for macro '_T'
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(22): warning C4002: too many actual parameters for macro '_T'
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(30): warning C4002: too many actual parameters for macro '_T'
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(21): warning C4473: 'wprintf' : not enough arguments passed for format string
+  s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(21): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(21): note: the missing variadic argument 1 is required by format string '%d'
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(22): warning C4473: 'wprintf' : not enough arguments passed for format string
+  s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(22): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(22): note: the missing variadic argument 1 is required by format string '%d'
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(25): warning C4996: 'wscanf': This function or variable may be unsafe. Consider using wscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstdio.h(930): note: see declaration of 'wscanf'
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(27): warning C4996: 'wscanf': This function or variable may be unsafe. Consider using wscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstdio.h(930): note: see declaration of 'wscanf'
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(29): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(101): note: see declaration of 'wcscat'
+s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(30): warning C4473: 'wprintf' : not enough arguments passed for format string
+  s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(30): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  s:\kpu\4-summer\system\practice\practice\mbcs_wbcs2.cpp(30): note: the missing variadic argument 1 is required by format string '%s'
+  MBCS_WBCS1.cpp
+  MBCSAndWBCS3.cpp
+  MBCSAndWBCS2.cpp
+  MBCSAndWBCS1.cpp
+s:\kpu\4-summer\system\practice\practice\mbcsandwbcs1.cpp(11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+s:\kpu\4-summer\system\practice\practice\mbcsandwbcs1.cpp(23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+MBCSAndWBCS2.obj : error LNK2005: main already defined in MBCSAndWBCS1.obj
+MBCS_WBCS1.obj : error LNK2005: wmain already defined in MBCSAndWBCS3.obj
+MBCS_WBCS2.obj : error LNK2005: wmain already defined in MBCSAndWBCS3.obj
+PolymorphicType1.obj : error LNK2005: wmain already defined in MBCSAndWBCS3.obj
+WinString.obj : error LNK2005: wmain already defined in MBCSAndWBCS3.obj
+LINK : warning LNK4067: ambiguous entry point; selected 'mainCRTStartup'
+S:\KPU\4-Summer\System\Practice\x64\Debug\Practice.exe : fatal error LNK1169: one or more multiply defined symbols found

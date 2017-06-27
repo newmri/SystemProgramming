@@ -1,0 +1,9 @@
+﻿  CommandPrompt.cpp
+s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(41): warning C4996: '_wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(240): note: see declaration of '_wcstok'
+s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(44): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(45): warning C4996: '_wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(240): note: see declaration of '_wcstok'
+  Practice.vcxproj -> S:\KPU\4-Summer\System\Practice\Debug\Practice.exe
+  Practice.vcxproj -> S:\KPU\4-Summer\System\Practice\Debug\Practice.pdb (Partial PDB)
