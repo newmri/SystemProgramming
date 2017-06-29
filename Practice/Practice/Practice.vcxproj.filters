@@ -13,17 +13,20 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Chapter02 Ascii vs Unicode">
-      <UniqueIdentifier>{88fa87ab-b512-42a4-b51a-27451886371a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Chapter03 64Bit">
-      <UniqueIdentifier>{2481c60e-3363-4886-8a72-0da26fba89a1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Chapter05 Process">
-      <UniqueIdentifier>{6339d9e1-6520-4159-8a01-37f69c568062}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Chapter 06 Kernel and Object Handle">
       <UniqueIdentifier>{e778f23d-ee1b-4986-8b38-3ee2c691a22a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 02 Ascii vs Unicode">
+      <UniqueIdentifier>{88fa87ab-b512-42a4-b51a-27451886371a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 03 64Bit">
+      <UniqueIdentifier>{2481c60e-3363-4886-8a72-0da26fba89a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 05 Process">
+      <UniqueIdentifier>{6339d9e1-6520-4159-8a01-37f69c568062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 07 IPC1">
+      <UniqueIdentifier>{01fde7ee-3e65-4d39-9c78-fb1064baac45}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -31,40 +34,40 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MBCS_WBCS1.cpp">
-      <Filter>Source Files\Chapter02 Ascii vs Unicode</Filter>
+      <Filter>Source Files\Chapter 02 Ascii vs Unicode</Filter>
     </ClCompile>
     <ClCompile Include="MBCS_WBCS2.cpp">
-      <Filter>Source Files\Chapter02 Ascii vs Unicode</Filter>
+      <Filter>Source Files\Chapter 02 Ascii vs Unicode</Filter>
     </ClCompile>
     <ClCompile Include="MBCSAndWBCS1.cpp">
-      <Filter>Source Files\Chapter02 Ascii vs Unicode</Filter>
+      <Filter>Source Files\Chapter 02 Ascii vs Unicode</Filter>
     </ClCompile>
     <ClCompile Include="MBCSAndWBCS2.cpp">
-      <Filter>Source Files\Chapter02 Ascii vs Unicode</Filter>
+      <Filter>Source Files\Chapter 02 Ascii vs Unicode</Filter>
     </ClCompile>
     <ClCompile Include="MBCSAndWBCS3.cpp">
-      <Filter>Source Files\Chapter02 Ascii vs Unicode</Filter>
+      <Filter>Source Files\Chapter 02 Ascii vs Unicode</Filter>
     </ClCompile>
     <ClCompile Include="PolymorphicType.cpp">
-      <Filter>Source Files\Chapter03 64Bit</Filter>
+      <Filter>Source Files\Chapter 03 64Bit</Filter>
     </ClCompile>
     <ClCompile Include="GetLastError.cpp">
-      <Filter>Source Files\Chapter03 64Bit</Filter>
+      <Filter>Source Files\Chapter 03 64Bit</Filter>
     </ClCompile>
     <ClCompile Include="WinString.cpp">
-      <Filter>Source Files\Chapter02 Ascii vs Unicode</Filter>
+      <Filter>Source Files\Chapter 02 Ascii vs Unicode</Filter>
     </ClCompile>
     <ClCompile Include="CreateProcess.cpp">
-      <Filter>Source Files\Chapter05 Process</Filter>
+      <Filter>Source Files\Chapter 05 Process</Filter>
     </ClCompile>
     <ClCompile Include="AdderProcess.cpp">
-      <Filter>Source Files\Chapter05 Process</Filter>
+      <Filter>Source Files\Chapter 05 Process</Filter>
     </ClCompile>
     <ClCompile Include="Calculator.cpp">
-      <Filter>Source Files\Chapter05 Process</Filter>
+      <Filter>Source Files\Chapter 05 Process</Filter>
     </ClCompile>
     <ClCompile Include="WinSysDir.cpp">
-      <Filter>Source Files\Chapter05 Process</Filter>
+      <Filter>Source Files\Chapter 05 Process</Filter>
     </ClCompile>
     <ClCompile Include="KerObjShare.cpp">
       <Filter>Source Files\Chapter 06 Kernel and Object Handle</Filter>
@@ -86,6 +89,18 @@
     </ClCompile>
     <ClCompile Include="OperationStateChild.cpp">
       <Filter>Source Files\Chapter 06 Kernel and Object Handle</Filter>
+    </ClCompile>
+    <ClCompile Include="MailReceiver.cpp">
+      <Filter>Source Files\Chapter 07 IPC1</Filter>
+    </ClCompile>
+    <ClCompile Include="MailSender.cpp">
+      <Filter>Source Files\Chapter 07 IPC1</Filter>
+    </ClCompile>
+    <ClCompile Include="PartAdder.cpp">
+      <Filter>Source Files\Chapter 07 IPC1</Filter>
+    </ClCompile>
+    <ClCompile Include="NonStopAdderManager.cpp">
+      <Filter>Source Files\Chapter 07 IPC1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
