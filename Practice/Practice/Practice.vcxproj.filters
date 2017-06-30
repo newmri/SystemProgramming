@@ -28,6 +28,9 @@
     <Filter Include="Source Files\Chapter 07 IPC1">
       <UniqueIdentifier>{01fde7ee-3e65-4d39-9c78-fb1064baac45}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 08 IPC2">
+      <UniqueIdentifier>{ed8ec5c0-90d7-46ae-be59-59f823173928}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -101,6 +104,36 @@
     </ClCompile>
     <ClCompile Include="NonStopAdderManager.cpp">
       <Filter>Source Files\Chapter 07 IPC1</Filter>
+    </ClCompile>
+    <ClCompile Include="MailSender2_1.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="MailSender2_2.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="DuplicateHandle.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="DuplicateHandleCHildProcess.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="anonymous_pipe.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="namedpipe_server.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="namedpipe_client.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvParent.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvChild.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="ListProcessInfo.cpp">
+      <Filter>Source Files\Chapter 08 IPC2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

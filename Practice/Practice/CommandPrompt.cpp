@@ -3,6 +3,7 @@
 #include <tchar.h>
 #include <locale.h>
 #include <Windows.h>
+#include <TlHelp32.h>
 
 #define STR_LEN 256
 #define CMD_TOKEN_NUM 10
@@ -18,6 +19,9 @@ int CmdProcessing(int);
 TCHAR* StrLower(TCHAR*);
 void Echo(int);
 void Start(int);
+void ShowProcessList();
+DWORD GetProcessID(TCHAR*);
+void KillProcess();
 int _tmain(int argc, TCHAR* argv[])
 {
 	// To input Korean language
@@ -63,6 +67,8 @@ int CmdProcessing(int a_tokenNum)
 	if (!_tcscmp(cmdTokenList[0], _T("exit"))) return TRUE;
 	else if (!_tcscmp(cmdTokenList[0], _T("echo"))) Echo(a_tokenNum);
 	else if (!_tcscmp(cmdTokenList[0], _T("start"))) Start(a_tokenNum);
+	else if (!_tcscmp(cmdTokenList[0], _T("lp"))) ShowProcessList();
+	else if (!_tcscmp(cmdTokenList[0], _T("kp"))) KillProcess();
 	else {
 		STARTUPINFO si = { 0, };
 		PROCESS_INFORMATION pi;
@@ -130,4 +136,69 @@ void Start(int a_tokenNum)
 
 	if (!ret) { _tprintf(ERROR_CMD, cmdTokenList[0]); return; }
 
+}
+
+void ShowProcessList()
+{
+	HANDLE hProcessSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+	if (hProcessSnap == INVALID_HANDLE_VALUE) {
+		_tprintf(_T("CreateToolhelp32Snapshot error! \n"));
+		return;
+	}
+
+	PROCESSENTRY32 pe32;
+	pe32.dwSize = sizeof(PROCESSENTRY32);
+
+	if (!Process32First(hProcessSnap, &pe32)) {
+		_tprintf(_T("Process32First error! \n"));
+		CloseHandle(hProcessSnap);
+		return;
+	}
+
+	do {
+		_tprintf(_T("%25s %5d \n"), pe32.szExeFile, pe32.th32ProcessID);
+	} while (Process32Next(hProcessSnap, &pe32));
+
+	CloseHandle(hProcessSnap);
+
+}
+DWORD GetProcessID(TCHAR* a_fileName)
+{
+	HANDLE hProcessSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+	if (hProcessSnap == INVALID_HANDLE_VALUE) {
+		_tprintf(_T("CreateToolhelp32Snapshot error! \n"));
+		return 0;
+	}
+
+	PROCESSENTRY32 pe32;
+	pe32.dwSize = sizeof(PROCESSENTRY32);
+
+	if (!Process32First(hProcessSnap, &pe32)) {
+		_tprintf(_T("Process32First error! \n"));
+		CloseHandle(hProcessSnap);
+		return 0;
+	}
+	do {
+		if (!_tcscmp(pe32.szExeFile, a_fileName)) {
+			CloseHandle(hProcessSnap);
+			return pe32.th32ProcessID;
+		}
+	} while (Process32Next(hProcessSnap, &pe32));
+
+	CloseHandle(hProcessSnap);
+	return 0;
+
+}
+void KillProcess()
+{
+	DWORD processID;
+	processID = GetProcessID(cmdTokenList[1]);
+	if (processID != 0) {
+		HANDLE hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processID);
+		TerminateProcess(hProcess, -1);
+	}
+	else {
+		_fputts(_T("Killing process is Faild. \n"), stdout);
+		_tprintf(_T("May be %s is doesen't exist. Scrutinize name again \n"), cmdTokenList[1]);
+	}
 }

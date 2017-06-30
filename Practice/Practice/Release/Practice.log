@@ -1,0 +1,133 @@
+﻿  AdderProcess.cpp
+  anonymous_pipe.cpp
+  Calculator.cpp
+Calculator.cpp(31): warning C4996: 'wscanf': This function or variable may be unsafe. Consider using wscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(930): note: see declaration of 'wscanf'
+Calculator.cpp(62): warning C4996: 'wscanf': This function or variable may be unsafe. Consider using wscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(930): note: see declaration of 'wscanf'
+  CommandPrompt.cpp
+CommandPrompt.cpp(27): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+CommandPrompt.cpp(54): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+CommandPrompt.cpp(49): warning C4996: '_wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstring.h(240): note: see declaration of '_wcstok'
+CommandPrompt.cpp(55): warning C4996: '_wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstring.h(240): note: see declaration of '_wcstok'
+CommandPrompt.cpp(96): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
+CommandPrompt.cpp(97): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
+CommandPrompt.cpp(107): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
+CommandPrompt.cpp(108): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
+CommandPrompt.cpp(111): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
+CommandPrompt.cpp(123): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+CommandPrompt.cpp(124): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
+  CreateProcess.cpp
+  DuplicateHandle.cpp
+DuplicateHandle.cpp(12): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
+  DuplicateHandleCHildProcess.cpp
+  EnvChild.cpp
+  EnvParent.cpp
+  GetLastError.cpp
+GetLastError.cpp(9): warning C4002: too many actual parameters for macro '_T'
+GetLastError.cpp(9): warning C4473: 'wprintf' : not enough arguments passed for format string
+  GetLastError.cpp(9): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  GetLastError.cpp(9): note: the missing variadic argument 1 is required by format string '%d'
+  KernelObjProb1.cpp
+  KErnelObjProb2.cpp
+  KerObjShare.cpp
+KerObjShare.cpp(7): warning C4996: 'fgetchar': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _fgetchar. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\stdio.h(2449): note: see declaration of 'fgetchar'
+  MailReceiver.cpp
+  MailSender.cpp
+  MailSender2_1.cpp
+MailSender2_1.cpp(24): warning C4477: 'wprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+MailSender2_1.cpp(26): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(130): note: see declaration of '_wfopen'
+MailSender2_1.cpp(27): warning C4477: 'fwprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+  MailSender2_2.cpp
+MailSender2_2.cpp(13): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(130): note: see declaration of '_wfopen'
+MailSender2_2.cpp(14): warning C4477: 'fwscanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'HANDLE *'
+MailSender2_2.cpp(14): warning C4996: 'fwscanf': This function or variable may be unsafe. Consider using fwscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(853): note: see declaration of 'fwscanf'
+MailSender2_2.cpp(16): warning C4477: 'wprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+  MBCSAndWBCS1.cpp
+  MBCSAndWBCS2.cpp
+  MBCSAndWBCS3.cpp
+  Compiling...
+  MBCS_WBCS1.cpp
+  MBCS_WBCS2.cpp
+MBCS_WBCS2.cpp(21): warning C4002: too many actual parameters for macro '_T'
+MBCS_WBCS2.cpp(22): warning C4002: too many actual parameters for macro '_T'
+MBCS_WBCS2.cpp(29): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstring.h(101): note: see declaration of 'wcscat'
+MBCS_WBCS2.cpp(30): warning C4002: too many actual parameters for macro '_T'
+MBCS_WBCS2.cpp(21): warning C4473: 'wprintf' : not enough arguments passed for format string
+  MBCS_WBCS2.cpp(21): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  MBCS_WBCS2.cpp(21): note: the missing variadic argument 1 is required by format string '%d'
+MBCS_WBCS2.cpp(22): warning C4473: 'wprintf' : not enough arguments passed for format string
+  MBCS_WBCS2.cpp(22): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  MBCS_WBCS2.cpp(22): note: the missing variadic argument 1 is required by format string '%d'
+MBCS_WBCS2.cpp(25): warning C4996: 'wscanf': This function or variable may be unsafe. Consider using wscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(930): note: see declaration of 'wscanf'
+MBCS_WBCS2.cpp(27): warning C4996: 'wscanf': This function or variable may be unsafe. Consider using wscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(930): note: see declaration of 'wscanf'
+MBCS_WBCS2.cpp(30): warning C4473: 'wprintf' : not enough arguments passed for format string
+  MBCS_WBCS2.cpp(30): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  MBCS_WBCS2.cpp(30): note: the missing variadic argument 1 is required by format string '%s'
+  namedpipe_client.cpp
+  namedpipe_server.cpp
+namedpipe_server.cpp(43): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(130): note: see declaration of '_wfopen'
+  NonStopAdderManager.cpp
+  Operation1.cpp
+  Operation2.cpp
+  OperationStateChild.cpp
+OperationStateChild.cpp(10): warning C4996: 'wscanf': This function or variable may be unsafe. Consider using wscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt\corecrt_wstdio.h(930): note: see declaration of 'wscanf'
+  OperationStateParent.cpp
+  PartAdder.cpp
+  PolymorphicType.cpp
+  WinString.cpp
+  WinSysDir.cpp
+anonymous_pipe.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+Calculator.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+CommandPrompt.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+CreateProcess.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+DuplicateHandle.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+DuplicateHandleCHildProcess.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+EnvChild.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+EnvParent.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+GetLastError.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+KernelObjProb1.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+KErnelObjProb2.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+KerObjShare.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+MailReceiver.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+MailSender.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+MailSender2_1.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+MailSender2_2.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+MBCSAndWBCS2.obj : error LNK2005: _main already defined in MBCSAndWBCS1.obj
+MBCSAndWBCS3.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+MBCS_WBCS1.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+MBCS_WBCS2.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+namedpipe_client.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+namedpipe_server.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+NonStopAdderManager.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+Operation1.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+Operation2.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+OperationStateChild.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+OperationStateParent.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+PartAdder.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+PolymorphicType.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+WinString.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+WinSysDir.obj : error LNK2005: _wmain already defined in AdderProcess.obj
+LINK : warning LNK4067: ambiguous entry point; selected 'mainCRTStartup'
+S:\KPU\4-Summer\System\Practice\Release\Practice.exe : fatal error LNK1169: one or more multiply defined symbols found
