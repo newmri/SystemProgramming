@@ -31,6 +31,9 @@
     <Filter Include="Source Files\Chapter 08 IPC2">
       <UniqueIdentifier>{ed8ec5c0-90d7-46ae-be59-59f823173928}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 09 Scheduling and Priority">
+      <UniqueIdentifier>{a93356df-f216-426a-ac77-c2081e143115}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -134,6 +137,18 @@
     </ClCompile>
     <ClCompile Include="ListProcessInfo.cpp">
       <Filter>Source Files\Chapter 08 IPC2</Filter>
+    </ClCompile>
+    <ClCompile Include="ABOVE_NORMAL_PRIORITY_CLASS.cpp">
+      <Filter>Source Files\Chapter 09 Scheduling and Priority</Filter>
+    </ClCompile>
+    <ClCompile Include="NORMAL_PRIORITY_CLASS.cpp">
+      <Filter>Source Files\Chapter 09 Scheduling and Priority</Filter>
+    </ClCompile>
+    <ClCompile Include="BELOW_NORMAL_PRIORITY_CLASS.cpp">
+      <Filter>Source Files\Chapter 09 Scheduling and Priority</Filter>
+    </ClCompile>
+    <ClCompile Include="sort.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
