@@ -34,6 +34,9 @@
     <Filter Include="Source Files\Chapter 09 Scheduling and Priority">
       <UniqueIdentifier>{a93356df-f216-426a-ac77-c2081e143115}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 12 Thread%27s Creation And Destruction">
+      <UniqueIdentifier>{b23b5d71-7519-465a-9a8b-b9a926d7aff6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -149,6 +152,21 @@
     </ClCompile>
     <ClCompile Include="sort.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CountThread.cpp">
+      <Filter>Source Files\Chapter 12 Thread%27s Creation And Destruction</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadAdderOnecpp.cpp">
+      <Filter>Source Files\Chapter 12 Thread%27s Creation And Destruction</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadAdderTwo.cpp">
+      <Filter>Source Files\Chapter 12 Thread%27s Creation And Destruction</Filter>
+    </ClCompile>
+    <ClCompile Include="CountThreadMultiThread.cpp">
+      <Filter>Source Files\Chapter 12 Thread%27s Creation And Destruction</Filter>
+    </ClCompile>
+    <ClCompile Include="SusPendCount.cpp">
+      <Filter>Source Files\Chapter 12 Thread%27s Creation And Destruction</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

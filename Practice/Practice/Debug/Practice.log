@@ -1,26 +1,6 @@
-﻿  CommandPrompt.cpp
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(32): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(54): warning C4996: '_wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(240): note: see declaration of '_wcstok'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(59): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(60): warning C4996: '_wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(240): note: see declaration of '_wcstok'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(105): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(106): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(116): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(117): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(120): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(132): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(133): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\corecrt_wstdio.h(1446): note: see declaration of '_swprintf'
-s:\kpu\4-summer\system\practice\practice\commandprompt.cpp(122): warning C4172: returning address of local variable or temporary: command
+﻿  SusPendCount.cpp
+s:\kpu\4-summer\system\practice\practice\suspendcount.cpp(24): warning C4474: 'wprintf' : too many arguments passed for format string
+  s:\kpu\4-summer\system\practice\practice\suspendcount.cpp(24): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+s:\kpu\4-summer\system\practice\practice\suspendcount.cpp(24): warning C4700: uninitialized local variable 'susCnt' used
   Practice.vcxproj -> S:\KPU\4-Summer\System\Practice\Debug\Practice.exe
   Practice.vcxproj -> S:\KPU\4-Summer\System\Practice\Debug\Practice.pdb (Partial PDB)
