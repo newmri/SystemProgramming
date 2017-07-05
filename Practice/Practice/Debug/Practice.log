@@ -1,6 +1,4 @@
-﻿  SusPendCount.cpp
-s:\kpu\4-summer\system\practice\practice\suspendcount.cpp(24): warning C4474: 'wprintf' : too many arguments passed for format string
-  s:\kpu\4-summer\system\practice\practice\suspendcount.cpp(24): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-s:\kpu\4-summer\system\practice\practice\suspendcount.cpp(24): warning C4700: uninitialized local variable 'susCnt' used
+﻿  MUTEX_WAIT_ABANDONED.cpp
+  LINK : S:\KPU\4-Summer\System\Practice\Debug\Practice.exe not found or not built by the last incremental link; performing full link
   Practice.vcxproj -> S:\KPU\4-Summer\System\Practice\Debug\Practice.exe
   Practice.vcxproj -> S:\KPU\4-Summer\System\Practice\Debug\Practice.pdb (Partial PDB)

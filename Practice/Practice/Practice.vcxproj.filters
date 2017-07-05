@@ -37,6 +37,9 @@
     <Filter Include="Source Files\Chapter 12 Thread%27s Creation And Destruction">
       <UniqueIdentifier>{b23b5d71-7519-465a-9a8b-b9a926d7aff6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 14 Thread Synchronization 1">
+      <UniqueIdentifier>{6d77ca5b-3ae6-43ff-b1cc-ef537b21ad56}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -167,6 +170,27 @@
     </ClCompile>
     <ClCompile Include="SusPendCount.cpp">
       <Filter>Source Files\Chapter 12 Thread%27s Creation And Destruction</Filter>
+    </ClCompile>
+    <ClCompile Include="CriticalSection.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 1</Filter>
+    </ClCompile>
+    <ClCompile Include="CrtiticalSectionSync.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 1</Filter>
+    </ClCompile>
+    <ClCompile Include="Interlocked.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 1</Filter>
+    </ClCompile>
+    <ClCompile Include="CriticalSectionSyncMutex.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 1</Filter>
+    </ClCompile>
+    <ClCompile Include="Semaphore.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 1</Filter>
+    </ClCompile>
+    <ClCompile Include="NamedMutex.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 1</Filter>
+    </ClCompile>
+    <ClCompile Include="MUTEX_WAIT_ABANDONED.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
