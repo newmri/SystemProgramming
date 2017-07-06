@@ -40,6 +40,9 @@
     <Filter Include="Source Files\Chapter 14 Thread Synchronization 1">
       <UniqueIdentifier>{6d77ca5b-3ae6-43ff-b1cc-ef537b21ad56}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 14 Thread Synchronization 2">
+      <UniqueIdentifier>{6e4eb53d-91e5-43a7-93ef-1f557dfa43bf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -191,6 +194,21 @@
     </ClCompile>
     <ClCompile Include="MUTEX_WAIT_ABANDONED.cpp">
       <Filter>Source Files\Chapter 14 Thread Synchronization 1</Filter>
+    </ClCompile>
+    <ClCompile Include="StringEvent.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 2</Filter>
+    </ClCompile>
+    <ClCompile Include="StringEvent2.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 2</Filter>
+    </ClCompile>
+    <ClCompile Include="StringEvent3.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 2</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualResetTimer.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 2</Filter>
+    </ClCompile>
+    <ClCompile Include="PeriodicTimer.cpp">
+      <Filter>Source Files\Chapter 14 Thread Synchronization 2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
