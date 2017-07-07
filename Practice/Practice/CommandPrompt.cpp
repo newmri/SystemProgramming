@@ -23,6 +23,7 @@ void ShowProcessList();
 DWORD GetProcessID(TCHAR*);
 void KillProcess();
 void Sort();
+void Type();
 int _tmain(int argc, TCHAR* argv[])
 {
 	// To input Korean language
@@ -71,6 +72,7 @@ int CmdProcessing(int a_tokenNum)
 	else if (!_tcscmp(cmdTokenList[0], _T("lp"))) ShowProcessList();
 	else if (!_tcscmp(cmdTokenList[0], _T("kp"))) KillProcess();
 	else if (!_tcscmp(cmdTokenList[0], _T("sort"))) Sort();
+	else if (!_tcscmp(cmdTokenList[0], _T("type"))) Type();
 
 	else {
 		STARTUPINFO si = { 0, };
@@ -236,5 +238,62 @@ void Sort()
 	CloseHandle(pi.hProcess);
 	CloseHandle(pi.hThread);
 
+	if (!ret) { _tprintf(ERROR_CMD, cmdTokenList[0]); return; }
+}
+
+void Type()
+{
+	TCHAR command[STR_LEN]{ 0, };
+	STARTUPINFO si = { 0, };
+	PROCESS_INFORMATION pi;
+	si.cb = sizeof(si);
+	bool ret;
+
+	if (!_tcscmp(cmdTokenList[2], _T("|"))) {
+		HANDLE hReadPipe, hWritePipe;
+
+		SECURITY_ATTRIBUTES pipeSA = { sizeof(SECURITY_ATTRIBUTES),NULL,TRUE };
+
+		CreatePipe(&hReadPipe, &hWritePipe, &pipeSA,0);
+
+		si.hStdInput = GetStdHandle(STD_INPUT_HANDLE);
+		si.hStdError = GetStdHandle(STD_ERROR_HANDLE);
+		si.hStdOutput = hWritePipe;
+		si.dwFlags |= STARTF_USESTDHANDLES;
+
+		_stprintf(command, _T("%s %s"), _T("Type.exe"), cmdTokenList[1]);
+		ret = CreateProcess(NULL, command, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi);
+		CloseHandle(hWritePipe);
+
+		STARTUPINFO siSort = { 0, };
+		PROCESS_INFORMATION piSort;
+		siSort.cb = sizeof(siSort);
+
+		siSort.hStdInput = hReadPipe;
+		siSort.hStdError = GetStdHandle(STD_ERROR_HANDLE);
+		siSort.hStdOutput = GetStdHandle(STD_OUTPUT_HANDLE);
+		siSort.dwFlags |= STARTF_USESTDHANDLES;
+
+		ret = CreateProcess(NULL, cmdTokenList[3], NULL, NULL, TRUE, 0, NULL, NULL, &siSort, &piSort);
+
+		CloseHandle(piSort.hThread);
+		CloseHandle(hReadPipe);
+
+		WaitForSingleObject(pi.hProcess, INFINITE);
+		WaitForSingleObject(piSort.hProcess, INFINITE);
+
+		CloseHandle(pi.hProcess);
+		CloseHandle(piSort.hProcess);
+	}
+	else {
+		_stprintf(command, _T("%s %s"), _T("Type.exe"), cmdTokenList[1]);
+		ret = CreateProcess(NULL, command, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi);
+
+		WaitForSingleObject(pi.hProcess, INFINITE);
+
+		CloseHandle(pi.hProcess);
+		CloseHandle(pi.hThread);
+
+	}
 	if (!ret) { _tprintf(ERROR_CMD, cmdTokenList[0]); return; }
 }
