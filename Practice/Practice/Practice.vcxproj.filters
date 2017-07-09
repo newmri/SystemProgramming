@@ -46,6 +46,9 @@
     <Filter Include="Source Files\Chapter 15 Thread Pool">
       <UniqueIdentifier>{3d2ad7e1-a541-4958-9572-a14a6fdb65dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 17 SEH">
+      <UniqueIdentifier>{9d1a1e4b-8a88-4e0d-b27c-57e49dfd5a24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -218,6 +221,48 @@
     </ClCompile>
     <ClCompile Include="type.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__try__finally.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="exception_finally.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="TerminationHandlerEx1.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="TerminationHandlerEx2.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="SEH_FlowView.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="SEH_Calculator_One.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="SEH_Calculator_Two.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="SEH_Calculator_Three.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="GetExceptionCode.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="SEH_Calculator_ContinueExcution.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="SEH_Calculator_ContinueSearch.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="RaiseException.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="EXCEPTION_NONCONTINUABLE.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="RaiseExceptionParam.cpp">
+      <Filter>Source Files\Chapter 17 SEH</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
