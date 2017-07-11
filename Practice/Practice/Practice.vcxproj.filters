@@ -49,6 +49,9 @@
     <Filter Include="Source Files\Chapter 17 SEH">
       <UniqueIdentifier>{9d1a1e4b-8a88-4e0d-b27c-57e49dfd5a24}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 18 File I/O and Dirctory">
+      <UniqueIdentifier>{ad4340d7-6f74-4f96-946a-a6df38b829a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -263,6 +266,27 @@
     </ClCompile>
     <ClCompile Include="RaiseExceptionParam.cpp">
       <Filter>Source Files\Chapter 17 SEH</Filter>
+    </ClCompile>
+    <ClCompile Include="UNICODE_BASE_FILE_IO.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="UNICODE_BASE_FILE_READ.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTimeInformation.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFileSize.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="Set_Get_FileAttributes.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFileInformationByHandle.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFullPathName.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
