@@ -24,6 +24,8 @@ DWORD GetProcessID(TCHAR*);
 void KillProcess();
 void Sort();
 void Type();
+BOOL CopyDirectoryFiles(WIN32_FIND_DATA, TCHAR*, TCHAR*);
+void XCopy(TCHAR*, TCHAR*);
 int _tmain(int argc, TCHAR* argv[])
 {
 	// To input Korean language
@@ -73,6 +75,7 @@ int CmdProcessing(int a_tokenNum)
 	else if (!_tcscmp(cmdTokenList[0], _T("kp"))) KillProcess();
 	else if (!_tcscmp(cmdTokenList[0], _T("sort"))) Sort();
 	else if (!_tcscmp(cmdTokenList[0], _T("type"))) Type();
+	else if (!_tcscmp(cmdTokenList[0], _T("xcopy"))) XCopy(cmdTokenList[1], cmdTokenList[2]);
 
 	else {
 		STARTUPINFO si = { 0, };
@@ -296,4 +299,59 @@ void Type()
 
 	}
 	if (!ret) { _tprintf(ERROR_CMD, cmdTokenList[0]); return; }
+}
+
+BOOL CopyDirectoryFiles(WIN32_FIND_DATA a_fileData, TCHAR* a_original, TCHAR* a_target)
+{
+	BOOL IsSuccess = NULL;
+
+	if (!_tcscmp(a_fileData.cFileName, _T(".")) || !_tcscmp(a_fileData.cFileName, _T("..")));
+	else if (a_fileData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) {
+		TCHAR subSourceDir[MAX_PATH];
+		TCHAR subDestDir[MAX_PATH];
+
+		_stprintf(subSourceDir, _T("%s\\%s"), a_original, a_fileData.cFileName);
+		_stprintf(subDestDir, _T("%s\\%s"), a_target, a_fileData.cFileName);
+		CreateDirectory(subDestDir, NULL);
+		XCopy(subSourceDir, subDestDir);
+	}
+	else {
+		TCHAR sourceFile[MAX_PATH];
+		TCHAR destFile[MAX_PATH];
+
+		_tcscpy(sourceFile, a_original);
+		_tcscpy(destFile, a_target);
+
+		_stprintf(sourceFile, _T("%s\\%s"), sourceFile, a_fileData.cFileName);
+		_stprintf(destFile, _T("%s\\%s"), destFile, a_fileData.cFileName);
+
+		IsSuccess = CopyFile(sourceFile, destFile, FALSE);
+		if (IsSuccess == 0) return FALSE;
+	}
+
+	return TRUE;
+}
+void XCopy(TCHAR* a_original, TCHAR* a_target)
+{
+
+	WIN32_FIND_DATA fileData;
+	BOOL IsSuccess = NULL;
+
+	TCHAR firstFFStr[MAX_PATH];
+	_stprintf(firstFFStr, _T("%s\\%s"), a_original, _T("*"));
+
+	HANDLE searchHandle = FindFirstFile(firstFFStr, &fileData);
+	if (searchHandle == INVALID_HANDLE_VALUE) return;
+	else CopyDirectoryFiles(fileData, a_original, a_target);
+
+	while (true) {
+		if (!FindNextFile(searchHandle, &fileData)) break;
+		else {
+			IsSuccess = CopyDirectoryFiles(fileData, a_original, a_target);
+			if (IsSuccess == FALSE) break;
+		}
+	}
+	FindClose(searchHandle);
+	_fputts(_T("Copy Success! \n"),stdout);
+	return;
 }

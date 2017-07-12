@@ -288,5 +288,26 @@
     <ClCompile Include="GetFullPathName.cpp">
       <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
     </ClCompile>
+    <ClCompile Include="SetFilePointer_32BIT_VERSION.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="SetFilePointer_64BIT_VERSION.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateDeleteDirectory.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentDirectory.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Windows_Dir.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchPath.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="ListDirectoryFileList.cpp">
+      <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
