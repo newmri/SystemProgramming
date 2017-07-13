@@ -52,6 +52,9 @@
     <Filter Include="Source Files\Chapter 18 File I/O and Dirctory">
       <UniqueIdentifier>{ad4340d7-6f74-4f96-946a-a6df38b829a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 19 Asynchronous I/O and APC">
+      <UniqueIdentifier>{59170fa2-f2b7-43b2-bcf5-06ea81a07eee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -308,6 +311,24 @@
     </ClCompile>
     <ClCompile Include="ListDirectoryFileList.cpp">
       <Filter>Source Files\Chapter 18 File I/O and Dirctory</Filter>
+    </ClCompile>
+    <ClCompile Include="namedpipe_asynch_server.cpp">
+      <Filter>Source Files\Chapter 19 Asynchronous I/O and APC</Filter>
+    </ClCompile>
+    <ClCompile Include="completion_routine_file.cpp">
+      <Filter>Source Files\Chapter 19 Asynchronous I/O and APC</Filter>
+    </ClCompile>
+    <ClCompile Include="nonBlocking_fileIOErr.cpp">
+      <Filter>Source Files\Chapter 19 Asynchronous I/O and APC</Filter>
+    </ClCompile>
+    <ClCompile Include="nonBlocking_fileIO.cpp">
+      <Filter>Source Files\Chapter 19 Asynchronous I/O and APC</Filter>
+    </ClCompile>
+    <ClCompile Include="CompletionROutinePeriodicTimer.cpp">
+      <Filter>Source Files\Chapter 19 Asynchronous I/O and APC</Filter>
+    </ClCompile>
+    <ClCompile Include="APCQueue.cpp">
+      <Filter>Source Files\Chapter 19 Asynchronous I/O and APC</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
