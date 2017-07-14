@@ -55,6 +55,9 @@
     <Filter Include="Source Files\Chapter 19 Asynchronous I/O and APC">
       <UniqueIdentifier>{59170fa2-f2b7-43b2-bcf5-06ea81a07eee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 20 Memory">
+      <UniqueIdentifier>{4368f964-ba3c-4f5e-acef-5b286f804de3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -329,6 +332,12 @@
     </ClCompile>
     <ClCompile Include="APCQueue.cpp">
       <Filter>Source Files\Chapter 19 Asynchronous I/O and APC</Filter>
+    </ClCompile>
+    <ClCompile Include="SYSTEM_INFO.cpp">
+      <Filter>Source Files\Chapter 20 Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicArray.cpp">
+      <Filter>Source Files\Chapter 20 Memory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
