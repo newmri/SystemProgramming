@@ -339,5 +339,20 @@
     <ClCompile Include="DynamicArray.cpp">
       <Filter>Source Files\Chapter 20 Memory</Filter>
     </ClCompile>
+    <ClCompile Include="DynamicHeap.cpp">
+      <Filter>Source Files\Chapter 20 Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="LINKED_HEAP.cpp">
+      <Filter>Source Files\Chapter 20 Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryMappedFileRead.cpp">
+      <Filter>Source Files\Chapter 20 Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryMappedFileSort.cpp">
+      <Filter>Source Files\Chapter 20 Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryMappedFile_CopyOnWrite.cpp">
+      <Filter>Source Files\Chapter 20 Memory</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

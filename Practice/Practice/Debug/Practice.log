@@ -1,5 +1,3 @@
-﻿  DynamicArray.cpp
-s:\kpu\4-summer\system\practice\practice\dynamicarray.cpp(27): warning C4018: '<': signed/unsigned mismatch
-s:\kpu\4-summer\system\practice\practice\dynamicarray.cpp(39): warning C4018: '<': signed/unsigned mismatch
+﻿  MemoryMappedFile_CopyOnWrite.cpp
   Practice.vcxproj -> S:\KPU\4-Summer\System\Practice\Debug\Practice.exe
   Practice.vcxproj -> S:\KPU\4-Summer\System\Practice\Debug\Practice.pdb (Partial PDB)
