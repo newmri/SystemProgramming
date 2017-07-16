@@ -58,6 +58,9 @@
     <Filter Include="Source Files\Chapter 20 Memory">
       <UniqueIdentifier>{4368f964-ba3c-4f5e-acef-5b286f804de3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter 21 DLL">
+      <UniqueIdentifier>{6c909e74-fb2d-4406-a99d-4e2f0f84869c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandPrompt.cpp">
@@ -353,6 +356,18 @@
     </ClCompile>
     <ClCompile Include="MemoryMappedFile_CopyOnWrite.cpp">
       <Filter>Source Files\Chapter 20 Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="SwapLibTest.cpp">
+      <Filter>Source Files\Chapter 21 DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="DllTest.cpp">
+      <Filter>Source Files\Chapter 21 DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplicitDll.cpp">
+      <Filter>Source Files\Chapter 21 DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="UseDll.cpp">
+      <Filter>Source Files\Chapter 21 DLL</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
